@@ -1,4 +1,4 @@
-import asyncio
+import asyncio 
 from asyncio import Future
 
 async def my_task(no: int) -> dict:
@@ -12,3 +12,6 @@ async def main() -> None:
                                    my_task(3))
     results: list[dict] = await tasks
     print(results)
+
+if __name__ == '_ _main_ _':
+    asyncio.run(main=main())
